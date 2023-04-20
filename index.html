@@ -20,25 +20,32 @@
     <span id="card-holder">Jane Appleseed</span>
     <span id="card-expiry">00/00</span>
 
-    <span id="card-cvc">000</span>
+    <span id="card-cvv">000</span>
 
     <!-- FORM -->
-    <!-- Comments are text field placeholders -->
-    <span>Cardholder Name</span>
-    <!-- e.g. Jane Appleseed -->
-    <span>Card Number</span>
-    <!-- e.g. 1234 5678 9123 0000 -->
-    <span>Exp. Date (MM/YY)</span>
-    <!-- MM YY -->
-    <span>CVC</span>
-    <!-- e.g. 123 -->
-    <button>Confirm</button>
+    <form action="">
+      <!-- Comments are text field placeholders -->
+      <label>Cardholder Name</label>
+      <input type="text" name="name" id="name" />
+      <!-- e.g. Jane Appleseed -->
+      <label>Card Number</label>
+      <input type="text" name="card-number" id="card-number" />
+      <!-- e.g. 1234 5678 9123 0000 -->
+      <label>Exp. Date (MM/YY)</label>
+      <input type="text" name="month" id="month" />
+      <input type="text" name="year" id="year" />
+      <!-- MM YY -->
+      <label>CVV</label>
+      <input type="text" name="cvv" id="cvv" />
+      <!-- e.g. 123 -->
+      <button type="button" id="confirm">Confirm</button>
+    </form>
 
     <!-- Completed state start -->
 
     <h1>Thank you!</h1>
     <p>We've added your card details</p>
-    <button>Continue</button>
+    <button id="continue">Continue</button>
 
     <footer>
       <p class="footer-text">
