@@ -17,6 +17,7 @@ button,
 input {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 input[type="text"],
@@ -29,8 +30,11 @@ input[type="text"] {
   border: 1px solid var(--lg-gr-violet);
 }
 
+input::placeholder {
+  color: var(--lg-gr-violet);
+}
+
 button {
-  font-size: 1rem;
   color: white;
   background-color: var(--dk-violet);
   border: hidden; /* use instead of none for accessibility */
