@@ -25,6 +25,10 @@ button {
   border-radius: 0.5rem;
 }
 
+input[type="text"] {
+  border: 1px solid var(--lg-gr-violet);
+}
+
 button {
   font-size: 1rem;
   color: white;
