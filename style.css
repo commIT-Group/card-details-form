@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
-body {
+:root {
+  font-size: 18px;
+
+  /* Color variables */
+  --gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+
+  --lg-gr-violet: hsl(270, 3%, 87%);
+  --dk-gr-violet: hsl(279, 6%, 55%);
+  --dk-violet: hsl(278, 68%, 11%);
+  --error: hsl(0, 100%, 66%);
+}
+
+body,
+button {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
-  font-size: 16px;
 }
 
 button {
@@ -13,7 +25,7 @@ button {
 }
 
 footer {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 
