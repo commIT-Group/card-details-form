@@ -18,6 +18,11 @@ button {
   font-weight: 500;
 }
 
+input,
+button {
+  cursor: pointer;
+}
+
 button {
   font-size: 1rem;
   color: white;
