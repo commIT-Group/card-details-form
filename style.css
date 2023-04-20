@@ -13,14 +13,16 @@
 }
 
 body,
-button {
+button,
+input {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
 
-input,
+input[type="text"],
 button {
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 button {
@@ -28,7 +30,6 @@ button {
   color: white;
   background-color: var(--dk-violet);
   border: hidden; /* use instead of none for accessibility */
-  border-radius: 0.5rem;
 }
 
 footer {
