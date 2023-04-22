@@ -44,6 +44,12 @@ fieldset {
   border: hidden;
 }
 
+#front-card,
+#back-card {
+  background: var(--gradient);
+  color: white;
+}
+
 footer {
   font-size: 0.7rem;
   text-align: center;
