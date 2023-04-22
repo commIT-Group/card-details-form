@@ -40,6 +40,10 @@ button {
   border: hidden; /* use instead of none for accessibility */
 }
 
+fieldset {
+  border: hidden;
+}
+
 footer {
   font-size: 0.7rem;
   text-align: center;
