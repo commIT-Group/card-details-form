@@ -17,17 +17,32 @@
   </head>
   <body>
     <main>
-      <div id="front-card">
-        <span id="card-number">0000 0000 0000 0000</span>
-        <span id="card-holder">Jane Appleseed</span>
-        <span id="card-expiry">00/00</span>
-      </div>
+      <section id="gradient-bg">
+        <div id="cards-container">
+          <div id="front-card">
+          <div class="card-container">
+            <div id="logos">
+              <div id="circle-big"></div>
+              <div id="circle-small"></div>
+            </div>
+            <div id="card-number">0000 0000 0000 0000</div>
+            <div id="card-details">
+              <span id="card-holder">Jane Appleseed</span>
+              <span id="card-expiry">00/00</span>
+            </div>
+          </div>
+        </div>
 
-      <div id="back-card">
-        <span id="card-cvv">000</span>
-      </div>
-
-      <form action="">
+        <div id="back-card">
+          <div id="magnetic-stripe"></div>
+          <div id="card-cvv">000</div>
+        </div>
+        </div>
+        
+      </section>
+      
+      <section id="form-bg">
+        <form action="">
         <fieldset>
           <legend>Cardholder Name</legend>
           <input
@@ -48,25 +63,33 @@
           />
         </fieldset>
 
-        <fieldset>
-          <legend>Exp. Date (MM/YY)</legend>
-          <input type="text" name="month" id="month" placeholder="MM" />
-          <input type="text" name="year" id="year" placeholder="YY" />
-        </fieldset>
+        <div id="inline-form">
+            <fieldset id="form-date">
+            <legend>Exp. Date (MM/YY)</legend>
+            <input type="text" name="month" id="month" placeholder="MM" />
+            <input type="text" name="year" id="year" placeholder="YY" />
+          </fieldset>
+          <fieldset>
+            <legend>CVV</legend>
+            <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
+          </fieldset>
+        </div>
 
-        <fieldset>
-          <legend>CVV</legend>
-          <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
-        </fieldset>
+        
+
+        
 
         <button type="button" id="confirm">Confirm</button>
       </form>
+      </section>
+
+      
 
       <!-- Completed state start -->
 
-      <h1>Thank you!</h1>
+      <!-- <h1>Thank you!</h1>
       <p>We've added your card details</p>
-      <button id="continue">Continue</button>
+      <button id="continue">Continue</button> -->
     </main>
 
     <footer>
