@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  font-size: 18px;
+
+  /* Color variables */
+  --gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+
+  --lg-gr-violet: hsl(270, 3%, 87%);
+  --dk-gr-violet: hsl(279, 6%, 55%);
+  --dk-violet: hsl(278, 68%, 11%);
+  --error: hsl(0, 100%, 66%);
+}
+
+body,
+button,
+input {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input[type="text"],
+button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+input[type="text"] {
+  border: 1px solid var(--lg-gr-violet);
+}
+
+input::placeholder {
+  color: var(--lg-gr-violet);
+}
+
+button {
+  color: white;
+  background-color: var(--dk-violet);
+  border: hidden; /* use instead of none for accessibility */
+}
+
+fieldset {
+  border: hidden;
+}
+
+#front-card,
+#back-card {
+  background: var(--gradient);
+  color: white;
+}
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
