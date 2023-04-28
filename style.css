@@ -93,25 +93,25 @@ main {
 
 #card-number {
   font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 23px;
-letter-spacing: 2.2px;
-margin-top: 37px;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 2.2px;
+  margin-top: 37px;;
 }
 
 #card-details {
   font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 500;
-font-size: 9px;
-line-height: 11px;
-letter-spacing: 1.28571px;
-text-transform: uppercase;
-display: flex;
-justify-content: space-between;
-margin-top: 17px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
 }
 
 
@@ -132,27 +132,29 @@ margin-top: 17px;
 
 #back-card #card-cvv {
   background: #ADB5BE;
-border-radius: 4px;
-padding: 9px;
-width: 80%;
-margin: auto;
-margin-top: 15px;
-color: #FFFFFF;
-font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 500;
-font-size: 9px;
-line-height: 11px;
-text-align: right;
-letter-spacing: 1.28571px;
-text-transform: uppercase;
+  border-radius: 4px;
+  padding: 9px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: right;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
 }
 
 #form-bg {
+  background-color: #FFFFFF;
   padding: 6.5rem 1.5rem;
   display: grid;
   place-items: center;
   outline: 1px solid red;
+  z-index: 2;
 }
 
 form, fieldset, input, button {
@@ -195,14 +197,14 @@ button {
 
 legend {
   font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: var(--dk-violet);
-margin-bottom: 0.56rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dk-violet);
+  margin-bottom: 0.56rem;
 }
 
 input[type="text"],
