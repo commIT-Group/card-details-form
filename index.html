@@ -13,48 +13,59 @@
   </head>
 
   <body>
-    <main>
-      <div id="front-card">
-        <span id="card-number">0000 0000 0000 0000</span>
-        <span id="card-holder">Jane Appleseed</span>
-        <span id="card-expiry">00/00</span>
-      </div>
+    <div id="page-content-wrapper" class="page-content-wrapper">
+      <aside id="cards-container" class="cards-container" aria-hidden="true">
+        <div id="front-card" class="front-card">
+          <span id="decorative-lg-circle" class="decorative-lg-circle"></span><span id="decorative-sm-circle"
+            class="decorative-sm-circle"></span>
 
-      <div id="back-card">
-        <span id="card-cvv">000</span>
-      </div>
+          <span id="card-client-number" class="card-client-number">0000 0000 0000 0000</span>
+          <span id="card-client-name" class="card-client-name">Jane Appleseed</span>
+          <span id="card-expiry-date" class="card-expiry-date">00/00</span>
+        </div>
 
-      <form action="">
-        <fieldset>
-          <legend>Cardholder Name</legend>
-          <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" />
-        </fieldset>
+        <div id="back-card">
+          <span id="card-magnetic-stripe" class="card-magnetic-stripe"></span>
+          <span id="card-client-cvv">000</span>
+          <span id="card-decoration" class="card-decoration"></span>
+        </div>
+      </aside>
 
-        <fieldset>
-          <legend>Card Number</legend>
-          <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" />
-        </fieldset>
+      <main id="page-main-content" class="page-main-content">
 
-        <fieldset>
-          <legend>Exp. Date (MM/YY)</legend>
-          <input type="text" name="month" id="month" placeholder="MM" />
-          <input type="text" name="year" id="year" placeholder="YY" />
-        </fieldset>
+        <form action="">
+          <div id="cardholder-name-container" class="cardholder-name-container">
+            <label>Cardholder Name</label>
+            <input type="text" name="client-name" id="client-name" placeholder="e.g. Jane Appleseed" />
+          </div>
 
-        <fieldset>
-          <legend>CVV</legend>
-          <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
-        </fieldset>
+          <div id="card-number-container" class="card-number-container">
+            <label>Card Number</label>
+            <input type="text" name="client-number" id="client-number" placeholder="e.g. 1234 5678 9123 0000" />
+          </div>
 
-        <button type="button" id="confirm">Confirm</button>
-      </form>
+          <fieldset id="expiry-date-container" class="expiry-date-container"> 
+            <legend>Exp. Date (MM/YY)</legend>
+            <input type="text" name="card-expiry-month" id="card-expiry-month" placeholder="MM" />
+            <input type="text" name="card-expiry-year" id="card-expiry-year" placeholder="YY" />
+          </fieldset>
 
-      <!-- Completed state start -->
+          <div id="card-cvv-container" class="card-cvv-container">
+            <label>CVV</label>
+            <input type="text" name="card-cvv" id="card-cvv" placeholder="e.g. 123" />
+          </div>
 
-      <h1>Thank you!</h1>
-      <p>We've added your card details</p>
-      <button id="continue">Continue</button>
-    </main>
+          <button type="button" id="btn-confirm-form">Confirm</button>
+        </form>
+
+        <!-- Completed state start -->
+        <div>
+          <p>Thank you!</p>
+          <p>We've added your card details</p>
+          <button id="btn-continue">Continue</button>
+        </div>
+      </main>
+    </div>
 
     <footer>
       <p class="footer-text">
