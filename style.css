@@ -35,8 +35,8 @@ main {
 #gradient-bg {
   background-color: var(--dk-violet);
   position: relative;
-  width: 100vw;
-  height: 34vh;
+  /* width: 100vw;
+  height: 34vh; */
 }
 
 
@@ -245,7 +245,7 @@ footer {
 footer a {
   color: hsl(228, 45%, 44%);
 }
-
+/* 
 @media screen and (min-width: 600px) {
   main {
     flex-direction: row;
@@ -259,10 +259,53 @@ footer a {
   }
 
   #cards-container {
-    top: 20%; /* change this */
+    top: 20%; 
+    change this 
   }
   #form-bg {
     
     margin: auto;
   }
-} 
+}  */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  /* Create 2 rows, 
+  auto makes the footer stick at the end and 
+  main ocuppies the remaining space */
+  grid-template-rows: 1fr auto;
+  /* Create 3 columns, the middle one with our web app,
+  min width of 375 px and max width of 1440px */
+  grid-template-columns: 1fr minmax(375px, 1440px) 1fr;
+  /* The same as
+  align-content: space-between; and
+  justify-content: center; */
+  place-content: space-between center;
+}
+
+body>main {
+  grid-row: 1 /2;
+  grid-column: 2 /3;
+}
+
+body>footer {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main section#gradient-bg {
+  min-height: 240px;
+  /* Section containing cards grows till max-width of 33.33% = 1/3*100*/
+  flex-grow: 1;
+}
+
+main section#form-bg {
+  /* Section containing form grows till max-width of 66.66% = 2/3*100*/  
+  flex-grow: 2;
+}
