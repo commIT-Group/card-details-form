@@ -1,14 +1,19 @@
-import { addZeroes } from "./functions.js";
+import { addZeroes, addNumberSpaces } from "./functions.js";
 import { field, pvText, button } from "./objects.js";
 
 const details = {
+  cardNumber: (number = "") => {
+    let value = addZeroes(number, 16);
+    value = addNumberSpaces(value);
+    return value;
+  },
   holderName: (name = "Jane Appleseed") => name,
-  expiryDate: (month = "00", year = "00") => {
+  expiryDate: (month = "", year = "") => {
     month = addZeroes(month, 2);
     year = addZeroes(year, 2);
     return `${month}/${year}`;
   },
-  cvv: (cvv = "000") => cvv,
+  cvv: (cvv = "") => addZeroes(cvv, 3),
 };
 
 initListeners();
@@ -31,6 +36,7 @@ function initListeners() {
   });
 }
 
+console.log(details.cardNumber());
 console.log(details.holderName());
 console.log(details.expiryDate());
 console.log(details.cvv());
