@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <title>CommIT Group | Interactive card details form</title>
+  </head>
 
-  000
+  <body>
+    <main>
+      <section id="gradient-bg" aria-hidden="true">
+        <div id="cards-container">
+          <div id="front-card">
+          <div class="card-container">
+            <div id="logos">
+              <div id="circle-big"></div>
+              <div id="circle-small"></div>
+            </div>
+            <div id="card-number">0000 0000 0000 0000</div>
+            <div id="card-details">
+              <span id="card-holder">Jane Appleseed</span>
+              <span id="card-expiry">00/00</span>
+            </div>
+          </div>
+        </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+        <div id="back-card">
+          <div id="magnetic-stripe"></div>
+          <div id="card-cvv">000</div>
+        </div>
+        </div>
+        
+      </section>
+      
+      <section id="form-bg">
+        <form action="">
+        <fieldset>
+          <legend>Cardholder Name</legend>
+          <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" />
+        </fieldset>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+        <fieldset>
+          <legend>Card Number</legend>
+          <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" />
+        </fieldset>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+        <div id="inline-form">
+            <fieldset id="form-date">
+            <legend>Exp. Date (MM/YY)</legend>
+            <input type="text" name="month" id="month" placeholder="MM" />
+            <input type="text" name="year" id="year" placeholder="YY" />
+          </fieldset>
+          <fieldset>
+            <legend>CVV</legend>
+            <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
+          </fieldset>
+        </div>
 
-  CVC
-  e.g. 123
+        
 
-  Confirm
+        
 
-  <!-- Completed state start -->
+        <button type="button" id="confirm">Confirm</button>
+      </form>
+      </section>
 
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      
+
+      <!-- Completed state start -->
+
+      <!-- <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button id="continue">Continue</button> -->
+    </main>
+
+    <footer>
+      <p class="footer-text">
+        Challenge by
+        <a class="footer-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by
+        <a class="footer-link" href="https://github.com/commIT-Group">commIT Group</a>.
+      </p>
+      <p class="footer-text">
+        Check out the
+        <a class="footer-link" href="https://github.com/commIT-Group/card-details-form">source code</a>!
+      </p>
+    </footer>
+  </body>
+
 </html>
