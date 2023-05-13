@@ -3,12 +3,10 @@ import { field, pvText, button } from "./objects.js";
 
 const details = {
   holderName: (name = "Jane Appleseed") => name,
-  expiryDate: (month, year) => {
-    if (month > 12) {
-      month = 12;
-    }
+  expiryDate: (month = "00", year = "00") => {
     month = addZeroes(month, 2);
     year = addZeroes(year, 2);
+    return `${month}/${year}`;
   },
 };
 
@@ -33,3 +31,4 @@ function initListeners() {
 }
 
 console.log(details.holderName());
+console.log(details.expiryDate());
