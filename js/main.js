@@ -8,6 +8,7 @@ const details = {
     year = addZeroes(year, 2);
     return `${month}/${year}`;
   },
+  cvv: (cvv = "000") => cvv,
 };
 
 initListeners();
@@ -32,3 +33,4 @@ function initListeners() {
 
 console.log(details.holderName());
 console.log(details.expiryDate());
+console.log(details.cvv());
