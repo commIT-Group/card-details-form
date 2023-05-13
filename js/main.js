@@ -19,3 +19,23 @@ const button = {
   confirm: document.getElementById("confirm"),
   continue: document.getElementById("continue"),
 };
+
+initListeners();
+
+function initListeners() {
+  field.name.addEventListener("input", (e) => {
+    console.log(e.target.value);
+  });
+  field.number.addEventListener("input", (e) => {
+    console.log(e.target.value);
+  });
+  field.month.addEventListener("input", (e) => {
+    console.log(e.target.value);
+  });
+  field.year.addEventListener("input", (e) => {
+    console.log(e.target.value);
+  });
+  field.cvv.addEventListener("input", (e) => {
+    console.log(e.target.value);
+  });
+}
