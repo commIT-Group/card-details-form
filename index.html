@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +7,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 
     <title>CommIT Group | Interactive card details form</title>
   </head>
@@ -17,60 +17,53 @@
       <section id="gradient-bg" aria-hidden="true">
         <div id="cards-container">
           <div id="front-card">
-          <div class="card-container">
-            <div id="logos">
-              <div id="circle-big"></div>
-              <div id="circle-small"></div>
-            </div>
-            <div id="card-number">0000 0000 0000 0000</div>
-            <div id="card-details">
-              <span id="card-holder">Jane Appleseed</span>
-              <span id="card-expiry">00/00</span>
+            <div class="card-container">
+              <div id="logos">
+                <div id="circle-big"></div>
+                <div id="circle-small"></div>
+              </div>
+              <div id="card-number">0000 0000 0000 0000</div>
+              <div id="card-details">
+                <span id="card-holder">Jane Appleseed</span>
+                <span id="card-expiry">00/00</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div id="back-card">
-          <div id="magnetic-stripe"></div>
-          <div id="card-cvv">000</div>
+          <div id="back-card">
+            <div id="magnetic-stripe"></div>
+            <div id="card-cvv">000</div>
+          </div>
         </div>
-        </div>
-        
       </section>
-      
+
       <section id="form-bg">
         <form action="">
-        <fieldset>
-          <legend>Cardholder Name</legend>
-          <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" />
-        </fieldset>
-
-        <fieldset>
-          <legend>Card Number</legend>
-          <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" />
-        </fieldset>
-
-        <div id="inline-form">
-            <fieldset id="form-date">
-            <legend>Exp. Date (MM/YY)</legend>
-            <input type="text" name="month" id="month" placeholder="MM" />
-            <input type="text" name="year" id="year" placeholder="YY" />
-          </fieldset>
           <fieldset>
-            <legend>CVV</legend>
-            <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
+            <legend>Cardholder Name</legend>
+            <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" />
           </fieldset>
-        </div>
 
-        
+          <fieldset>
+            <legend>Card Number</legend>
+            <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" />
+          </fieldset>
 
-        
+          <div id="inline-form">
+            <fieldset id="form-date">
+              <legend>Exp. Date (MM/YY)</legend>
+              <input type="text" name="month" id="month" placeholder="MM" />
+              <input type="text" name="year" id="year" placeholder="YY" />
+            </fieldset>
+            <fieldset>
+              <legend>CVV</legend>
+              <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
+            </fieldset>
+          </div>
 
-        <button type="button" id="confirm">Confirm</button>
-      </form>
+          <button type="button" id="confirm">Confirm</button>
+        </form>
       </section>
-
-      
 
       <!-- Completed state start -->
 
@@ -83,8 +76,7 @@
       <p class="footer-text">
         Challenge by
         <a class="footer-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by
-        <a class="footer-link" href="https://github.com/commIT-Group">commIT Group</a>.
+        Coded by <a class="footer-link" href="https://github.com/commIT-Group">commIT Group</a>.
       </p>
       <p class="footer-text">
         Check out the
@@ -92,5 +84,4 @@
       </p>
     </footer>
   </body>
-
 </html>
